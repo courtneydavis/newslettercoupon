@@ -1,0 +1,24 @@
+<form action="<?php echo $block->getBaseUrl().'coupon/index/post/';?>" name="coupon" method="post" id="privateForm-1" data-hasrequired="<?php echo __('* Required Fields') ?>" data-mage-init='{"validation":{}}' class="form">
+<fieldset class="fieldset">
+        <div class="field email required">
+            <label class="label" for="email"><span><?php  echo __('Name') ?></span></label>
+            <div class="control">
+                <input name="name" id="name" title="<?php echo __('Name') ?>" class="input-text" type="text" data-validate="{required:true}"/>
+            </div>
+        </div>
+        <div class="field email required">
+            <label class="label" for="email"><span><?php  echo __('Email') ?></span></label>
+            <div class="control">
+                <input name="email" id="email" title="<?php echo __('Email') ?>" class="input-text" type="email" data-validate="{required:true, 'validate-email':true}"/>
+            </div>
+        </div>
+    </fieldset>
+    <div class="actions-toolbar">
+        <div class="primary">
+            <input type="hidden" name="hideit" id="hideit" value="" />
+            <button type="submit" title="<?php echo __('Submit') ?>" class="action submit primary">
+                <span><?php echo __('Submit') ?></span>
+            </button>
+        </div>
+    </div>
+</form>
